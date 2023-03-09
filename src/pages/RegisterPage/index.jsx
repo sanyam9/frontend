@@ -11,7 +11,7 @@ function RegisterPage() {
         <img src={folderImage} alt='folder-img' />
       </div>
       <div className='right-container'>
-        <h1>Login to your CMS+ account</h1>
+        <h1>Register to CMS+</h1>
         <div className='login-box'>
           <div className='input-label'>
             <label>Email</label>

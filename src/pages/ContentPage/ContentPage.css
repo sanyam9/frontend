@@ -1,0 +1,86 @@
+.page-wrapper {
+  height: 100vh;
+  display: flex;
+}
+
+.content-wrapper {
+  width: 75%;
+  background-color: white;
+}
+
+.content-wrapper > h1 {
+  color: black;
+  background-color: white;
+  padding: 20px;
+}
+
+.content-body {
+  height: calc(100vh - 79px);
+  display: flex;
+}
+
+.content-left {
+  width: 30%;
+  background-color: #d4d6e4;
+  padding: 30px;
+  color: grey;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-right {
+  width: 75%;
+  background-color: #ebeefd;
+}
+
+.content-left > header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+
+li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.new-button {
+  background-color: white;
+  font-size: large;
+  color: #4f21c6;
+  border: #4f21c6;
+  border-style: dotted;
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.type-cards,
+.field-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content-right {
+  padding: 20px;
+}
+
+.content-right > header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.content-title {
+  display: flex;
+  gap: 10px;
+}
+
+.content-title > i {
+  font-size: large;
+  margin-top: auto;
+  margin-bottom: auto;
+}

@@ -1,0 +1,20 @@
+* {
+  font-family: "Montserrat";
+}
+.type-card {
+  background-color: white;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: large;
+  color: black;
+  border: none;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.type-card > p {
+  font-size: medium;
+  padding: 10px;
+}
