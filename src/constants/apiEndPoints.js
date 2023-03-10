@@ -42,20 +42,3 @@ export const GET_ENTRIES_BY_ID = (id) => ({
   url: `entries/${id}`,
   method: 'GET',
 });
-
-// export const CREATE_ENTRY
-
-// export const GET_EVENTS = {
-//   url: 'events',
-//   method: 'GET',
-// };
-
-// export const UPDATE_RECORD_LIKE = (id) => ({
-//   url: `events/${id}`,
-//   method: 'PATCH',
-// });
-
-// export const GET_EVENT_BY_ID = (id) => ({
-//   url: `events/${id}`,
-//   method: 'GET',
-// })

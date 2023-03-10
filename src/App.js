@@ -14,6 +14,8 @@ import ErrorPage from './pages/ErrorPage';
 import ContentPage from './pages/ContentPage';
 import NotFoundPage from './pages/NotFoundPage';
 import CollectionPage from './pages/CollectionPage';
+import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute';
+import PublicRoute from './components/PublicRoute/PublicRoute';
 
 function App() {
   return (
@@ -21,12 +23,37 @@ function App() {
       <header className='App-header'>
         <BrowserRouter>
           <Routes>
-            <Route path={LOGIN_ROUTE} element={<LoginPage />} />
-            <Route path={REGISTER_ROUTE} element={<RegisterPage />} />
-            <Route path={CONTENT_ROUTE} element={<ContentPage />} />
+            <Route
+              path={LOGIN_ROUTE}
+              element={
+                <PublicRoute>
+                  <LoginPage />
+                </PublicRoute>
+              }
+            />
+            <Route
+              path={REGISTER_ROUTE}
+              element={
+                <PublicRoute>
+                  <RegisterPage />
+                </PublicRoute>
+              }
+            />
+            <Route
+              path={CONTENT_ROUTE}
+              element={
+                <ProtectedRoute>
+                  <ContentPage />
+                </ProtectedRoute>
+              }
+            />
             <Route
               path={`${COLLECTION_ROUTE}/:collectionName`}
-              element={<CollectionPage />}
+              element={
+                <ProtectedRoute>
+                  <CollectionPage />
+                </ProtectedRoute>
+              }
             />
             <Route
               path={`${ERROR_ROUTE}/:errorCode?`}

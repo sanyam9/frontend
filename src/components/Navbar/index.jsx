@@ -31,7 +31,7 @@ function Navbar() {
         </header>
         <div className='collection-list'>
           <ul>
-            {collections.map((collection, index) => (
+            {collections.map((collection) => (
               <li
                 className={
                   highlightedCollection === collection.name
@@ -41,7 +41,7 @@ function Navbar() {
                 onClick={(event) =>
                   navigate(`${COLLECTION_ROUTE}/${event.target.innerText}`)
                 }
-                key={index}
+                key={collection.id}
               >
                 {collection.name}
               </li>
