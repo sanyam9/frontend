@@ -1,11 +1,10 @@
 import axios from 'axios';
-import { BACKEND_URL } from '../../constants/apiEndPoints.js';
 import { ERROR_ROUTE } from '../../constants/routes';
 
 const makeRequest = async (apiEndPoint, dynamicConfig = {}, navigate) => {
   try {
     const requestDetails = {
-      baseURL: BACKEND_URL,
+      baseURL: apiEndPoint.baseUrl,
       url: apiEndPoint.url,
       method: apiEndPoint.method,
       ...dynamicConfig,

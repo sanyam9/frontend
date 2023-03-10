@@ -47,15 +47,20 @@
   flex-direction: column;
 }
 
-.input-label > input, .register-btn {
+.input-label > input,
+.register-btn {
   height: 30px;
   width: 250px;
   border-radius: 7px;
   border: none;
 }
 
-.register-btn{
+.register-btn {
   color: white;
-  background-image: linear-gradient(to right, #9374f7 , #5f4bf5);
+  background-image: linear-gradient(to right, #9374f7, #5f4bf5);
 }
 
+.password-match {
+  color: red;
+  font-size: small;
+}
