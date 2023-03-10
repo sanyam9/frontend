@@ -1,0 +1,68 @@
+.sidemodal-bg {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(200, 200, 200, 0.5);
+  position: absolute;
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+}
+
+.sidemodal-container {
+  width: 500px;
+  height: 100vh;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.sidemodal-container header {
+  display: inline-block;
+  margin: 30px 0px;
+}
+
+.sidemodal-container footer {
+  width: 580px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  /* flex: 20%; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 -5px 5px -5px;
+}
+
+.sidemodal-input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.sidemodal-input > input {
+  height: 30px;
+  margin: 10px 0px;
+  border-radius: 8px;
+  border: none;
+  border-style: solid;
+}
+
+.sidemodal-container footer button {
+  width: 150px;
+  height: 40px;
+  margin: 10px;
+  border: none;
+  color: black;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.sidemodal-container footer .create-btn {
+  background-image: linear-gradient(to right, #9374f7, #5f4bf5);
+  color: white;
+}

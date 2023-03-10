@@ -6,12 +6,14 @@ import {
   ERROR_ROUTE,
   REGISTER_ROUTE,
   CONTENT_ROUTE,
+  COLLECTION_ROUTE,
 } from './constants/routes';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import ErrorPage from './pages/ErrorPage';
 import ContentPage from './pages/ContentPage';
 import NotFoundPage from './pages/NotFoundPage';
+import CollectionPage from './pages/CollectionPage';
 
 function App() {
   return (
@@ -22,6 +24,10 @@ function App() {
             <Route path={LOGIN_ROUTE} element={<LoginPage />} />
             <Route path={REGISTER_ROUTE} element={<RegisterPage />} />
             <Route path={CONTENT_ROUTE} element={<ContentPage />} />
+            <Route
+              path={`${COLLECTION_ROUTE}/:name`}
+              element={<CollectionPage />}
+            />
             <Route
               path={`${ERROR_ROUTE}/:errorCode?`}
               element={<ErrorPage />}
