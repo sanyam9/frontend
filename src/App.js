@@ -25,7 +25,7 @@ function App() {
             <Route path={REGISTER_ROUTE} element={<RegisterPage />} />
             <Route path={CONTENT_ROUTE} element={<ContentPage />} />
             <Route
-              path={`${COLLECTION_ROUTE}/:name`}
+              path={`${COLLECTION_ROUTE}/:collectionName`}
               element={<CollectionPage />}
             />
             <Route
